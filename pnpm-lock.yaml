@@ -8,6 +8,7 @@ specifiers:
   eslint: 8.32.0
   eslint-config-next: 13.1.2
   next: 13.1.2
+  pnpm: 7.25.0
   react: 18.2.0
   react-dom: 18.2.0
   typescript: 4.9.4
@@ -24,6 +25,7 @@ devDependencies:
   '@types/react-dom': 18.0.10
   eslint: 8.32.0
   eslint-config-next: 13.1.2_7uibuqfxkfaozanbtbziikiqje
+  pnpm: 7.25.0
   typescript: 4.9.4
 
 packages:
@@ -1747,6 +1749,12 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+    dev: true
+
+  /pnpm/7.25.0:
+    resolution: {integrity: sha512-FGFQUON8kJ6ma39elJ8lyD8wPIfgp3opGJD9sX0TgIJk4zSr556qCgC8AN+3BFHe4yuRkEauf4JVLW2RKyyEcA==}
+    engines: {node: '>=14.6'}
+    hasBin: true
     dev: true
 
   /postcss/8.4.14:
