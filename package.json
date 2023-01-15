@@ -2,7 +2,9 @@
   "name": "nextjs-template-sky",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@7.25.0",
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -20,6 +22,7 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
+    "husky": "^8.0.3",
     "pnpm": "7.25.0",
     "sass": "^1.57.1",
     "typescript": "4.9.4"
