@@ -2,8 +2,41 @@
   "name": "nextjs-template-sky",
   "version": "0.0.0",
   "private": true,
+  "description": "A template project for Next.js by skyclouds2001.",
+  "keywords": [
+    "next.js",
+    "template",
+    "config",
+    "typescript",
+    "ant design",
+    "eslint",
+    "prettier",
+    "stylelint",
+    "commitlint",
+    "lint-staged"
+  ],
+  "author": {
+    "name": "skyclouds2001",
+    "email": "skyclouds2001@163.com",
+    "url": "https://skyclouds2001.github.io/"
+  },
+  "contributors": [
+    "skyclouds2001"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skyclouds2001/next.js-template-sky.git"
+  },
+  "homepage": "https://github.com/skyclouds2001/next.js-template-sky#readme",
+  "bugs": {
+    "url": "https://github.com/skyclouds2001/next.js-template-sky/issues",
+    "email": "skyclouds2001@163.com"
+  },
   "license": "MIT",
   "packageManager": "pnpm@7.25.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "prepare": "husky install",
     "dev": "next dev",
@@ -28,7 +61,10 @@
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "pnpm": "7.25.0",
@@ -38,7 +74,9 @@
     "sass": "^1.57.1",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recess-order": "^3.1.0",
     "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^6.0.1",
     "tailwindcss": "^3.2.4",
     "typescript": "4.9.4"
   }
