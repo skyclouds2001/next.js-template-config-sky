@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="A template project for next.js by skyclouds2001." />
         <meta name="generator" content="next.js" />
         <meta name="keywords" content="next.js,template,config" />
-        <meta name="referrer" content="no-referer" />
+        <meta name="referrer" content="no-referrer" />
         <meta name="theme-color" media="(prefers-color-scheme:light)" content="white" />
         <meta name="theme-color" media="(prefers-color-scheme:dark)" content="black" />
         <meta name="color-schema" content="[light|dark]" />
@@ -26,7 +26,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="format-detection" content="telephone=no,date=no,address=no" />
         <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
         <meta httpEquiv="content-type" content="text/html;charset=utf-8" />
-        <meta httpEquiv="content-security-policy" content="default-src 'self'" />
         <meta property="og:title" content="next.js-template-sky" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="/" />
