@@ -1,6 +1,13 @@
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
+import { ConfigProvider, App as Ap } from 'antd'
+import dayjs from 'dayjs'
+import zhCN from 'antd/locale/zh_CN'
+import 'dayjs/locale/zh-cn'
+import 'antd/dist/reset.css'
 import '@/styles/globals.css'
+
+dayjs.locale('zh-cn')
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -34,7 +41,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>next.js template</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <ConfigProvider locale={zhCN}>
+        <Ap>
+          <Component {...pageProps} />
+        </Ap>
+      </ConfigProvider>
     </>
   )
 }
