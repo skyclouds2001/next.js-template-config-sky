@@ -15,6 +15,7 @@ specifiers:
   antd: ^5.1.4
   axios: ^1.2.2
   cssnano: ^5.1.14
+  dayjs: ^1.11.7
   eslint: 8.32.0
   eslint-config-next: 13.1.2
   eslint-config-prettier: ^8.6.0
@@ -46,6 +47,7 @@ dependencies:
   '@next/font': 13.1.2
   antd: 5.1.4_biqbaboplfbrettd7655fr4n2y
   axios: 1.2.2
+  dayjs: 1.11.7
   next: 13.1.2_3duxcpitbtplz62feflag7fwby
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
