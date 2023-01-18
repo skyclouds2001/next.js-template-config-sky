@@ -25,11 +25,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/skyclouds2001/next.js-template-sky.git"
+    "url": "git+https://github.com/skyclouds2001/next.js-template-config-sky.git"
   },
-  "homepage": "https://github.com/skyclouds2001/next.js-template-sky#readme",
+  "homepage": "https://github.com/skyclouds2001/next.js-template-config-sky#readme",
   "bugs": {
-    "url": "https://github.com/skyclouds2001/next.js-template-sky/issues",
+    "url": "https://github.com/skyclouds2001/next.js-template-config-sky/issues",
     "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
