@@ -13,7 +13,9 @@
     "prettier",
     "stylelint",
     "commitlint",
-    "lint-staged"
+    "lint-staged",
+    "postcss",
+    "tailwindcss"
   ],
   "author": {
     "name": "skyclouds2001",
