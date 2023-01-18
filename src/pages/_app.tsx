@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import { ConfigProvider, App as Ap } from 'antd'
@@ -9,7 +10,7 @@ import '@/styles/globals.css'
 
 dayjs.locale('zh-cn')
 
-export default function App({ Component, pageProps }: AppProps) {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -49,3 +50,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
+export default App
