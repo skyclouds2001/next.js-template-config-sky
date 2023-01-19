@@ -15,7 +15,7 @@ const Home: React.FC<HomeProps> = (props) => {
 
   return (
     <>
-      <main>
+      <main className="w-screen h-screen flex justify-center items-center flex-col">
         <div>next.js template</div>
         <div>{props.name}</div>
         <div>{value}</div>
