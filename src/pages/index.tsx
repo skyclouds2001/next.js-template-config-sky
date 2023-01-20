@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import type { GetServerSideProps } from 'next'
 import { useSelector, useDispatch } from 'react-redux'
+import Hello from '@/components/hello'
 import { increase, decrease } from '@/store'
 import type { RootState, AppDispatch } from '@/store'
 
@@ -16,11 +17,12 @@ const Home: React.FC<HomeProps> = (props) => {
   return (
     <>
       <main className="w-screen h-screen flex justify-center items-center flex-col">
-        <div>next.js template</div>
+        <h1>next.js template</h1>
         <div>{props.name}</div>
         <div>{value}</div>
         <div onClick={() => dispatch(increase())}>+</div>
         <div onClick={() => dispatch(decrease())}>-</div>
+        <Hello />
       </main>
     </>
   )
