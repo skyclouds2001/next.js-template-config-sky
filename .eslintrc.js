@@ -5,5 +5,11 @@ module.exports = {
   rules: {
     'n/no-missing-import': 'off',
   },
-  overrides: [],
+  overrides: [
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended', 'plugin:testing-library/react'],
+      excludedFiles: ['**/__tests__/utils/**/*.[jt]s?(x)'],
+    },
+  ],
 }
