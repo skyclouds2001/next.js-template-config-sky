@@ -1,4 +1,4 @@
-import { describe, it } from '@jest/globals'
+import { describe, it, expect } from '@jest/globals'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Home from '@/pages/index'
@@ -12,6 +12,7 @@ describe('Home', () => {
       name: /next\.js template/i,
     })
 
+    // @ts-ignore
     expect(heading).toBeInTheDocument()
   })
 })
