@@ -8,8 +8,7 @@ module.exports = {
   overrides: [
     {
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:jest/recommended', 'plugin:jest-dom/recommended', 'plugin:testing-library/react'],
-      excludedFiles: ['**/__tests__/utils/**/*.[jt]s?(x)'],
+      extends: ['plugin:testing-library/react'],
     },
   ],
 }
