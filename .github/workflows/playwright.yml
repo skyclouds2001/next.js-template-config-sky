@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: 16
       - name: Install global dependences
-        run: npm install pnpm -g
+        run: npm install pnpm@7.25.0 -g
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Install Playwright Browsers
         run: pnpm dlx playwright install --with-deps
       - name: Run Playwright tests
