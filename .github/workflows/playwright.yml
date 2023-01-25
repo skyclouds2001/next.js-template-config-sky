@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Install global dependences
+        run: npm install pnpm -g
       - name: Install dependencies
         run: pnpm install
       - name: Install Playwright Browsers
