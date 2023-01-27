@@ -14,14 +14,22 @@ const Home: React.FC<HomeProps> = (props) => {
   const value = useSelector<RootState, RootState['hello']['value']>((state) => state.hello.value)
   const dispatch = useDispatch<AppDispatch>()
 
+  const add = () => {
+    dispatch(increase())
+  }
+
+  const sub = () => {
+    dispatch(decrease())
+  }
+
   return (
     <>
       <main className="w-screen h-screen flex justify-center items-center flex-col">
         <h1>next.js template</h1>
         <div>{props.name}</div>
         <div>{value}</div>
-        <div onClick={() => dispatch(increase())}>+</div>
-        <div onClick={() => dispatch(decrease())}>-</div>
+        <button onClick={add}>+</button>
+        <button onClick={sub}>-</button>
         <Hello />
       </main>
     </>
