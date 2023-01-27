@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import Hello from '@/components/hello'
 import { increase, decrease } from '@/store'
 import type { RootState, AppDispatch } from '@/store'
+import styles from './index.module.css'
 
 interface HomeProps {
   name: string
@@ -25,9 +26,9 @@ const Home: React.FC<HomeProps> = (props) => {
   return (
     <>
       <main className="w-screen h-screen flex justify-center items-center flex-col">
-        <h1>next.js template</h1>
-        <div>{props.name}</div>
-        <div>{value}</div>
+        <h1 className={styles.title}>next.js template</h1>
+        <div className={styles.name}>{props.name}</div>
+        <div className={styles.value}>{value}</div>
         <button onClick={add}>+</button>
         <button onClick={sub}>-</button>
         <Hello />
