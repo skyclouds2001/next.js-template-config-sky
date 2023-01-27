@@ -5,6 +5,9 @@
 
 # testing
 /coverage
+/playwright-result/
+/playwright-report/
+/playwright/.cache/
 
 # next.js
 /.next/
