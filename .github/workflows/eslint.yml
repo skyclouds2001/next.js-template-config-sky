@@ -24,8 +24,6 @@ jobs:
         run: npm install pnpm@7.25.0 -g
       - name: Install Dependencies
         run: pnpm install
-      - name: Install Additional Packages
-        run: pnpm install @microsoft/eslint-formatter-sarif@2.1.7
 
       - name: Run ESLint
         run: npx eslint .

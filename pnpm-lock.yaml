@@ -5,6 +5,7 @@ specifiers:
   '@commitlint/cli': ^17.4.2
   '@commitlint/config-conventional': ^17.4.2
   '@jest/globals': ^29.4.1
+  '@microsoft/eslint-formatter-sarif': ^3.0.0
   '@next/font': 13.1.2
   '@playwright/test': ^1.30.0
   '@reduxjs/toolkit': ^1.9.1
@@ -97,6 +98,7 @@ devDependencies:
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
   '@jest/globals': 29.4.1
+  '@microsoft/eslint-formatter-sarif': 3.0.0
   '@playwright/test': 1.30.0
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
@@ -1226,6 +1228,18 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
+
+  /@microsoft/eslint-formatter-sarif/3.0.0:
+    resolution: { integrity: sha512-KIKkT44hEqCzqxODYwFMUvYEK0CrdHx/Ll9xiOWgFbBSRuzbxmVy4d/tzfgoucGz72HJZNOMjuyzFTBKntRK5Q== }
+    engines: { node: '>= 14' }
+    dependencies:
+      eslint: 8.32.0
+      jschardet: 3.0.0
+      lodash: 4.17.21
+      utf8: 3.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@mswjs/cookies/0.2.2:
@@ -5323,6 +5337,11 @@ packages:
       argparse: 2.0.1
     dev: true
 
+  /jschardet/3.0.0:
+    resolution: { integrity: sha512-lJH6tJ77V8Nzd5QWRkFYCLc13a3vADkh3r/Fi8HupZGWk2OVVDfnZP8V/VgQgZ+lzW0kG2UGb5hFgt3V3ndotQ== }
+    engines: { node: '>=0.1.90' }
+    dev: true
+
   /jsdoc-type-pratt-parser/3.1.0:
     resolution: { integrity: sha512-MgtD0ZiCDk9B+eI73BextfRrVQl0oyzRG8B2BjORts6jbunj4ScKPcyXGTbB6eXL4y9TzxCm6hyeLq/2ASzNdw== }
     engines: { node: '>=12.0.0' }
@@ -8960,6 +8979,10 @@ packages:
     dependencies:
       react: 18.2.0
     dev: false
+
+  /utf8/3.0.0:
+    resolution: { integrity: sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ== }
+    dev: true
 
   /util-deprecate/1.0.2:
     resolution: { integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw== }
