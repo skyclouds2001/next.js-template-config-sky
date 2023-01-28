@@ -24,7 +24,7 @@ module.exports = {
     },
     {
       files: ['**/*.scss'],
-      customSyntax: 'postcss-scss',
+      extends: ['stylelint-config-standard-scss', 'stylelint-config-prettier-scss'],
     },
     {
       files: ['**/*.less'],
