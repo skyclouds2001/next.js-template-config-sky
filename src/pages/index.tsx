@@ -32,6 +32,11 @@ const Home: React.FC<HomeProps> = (props) => {
         <button onClick={add}>+</button>
         <button onClick={sub}>-</button>
         <Hello />
+        <style jsx>{`
+          div {
+            color: #111;
+          }
+        `}</style>
       </main>
     </>
   )
