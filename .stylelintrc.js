@@ -9,5 +9,34 @@ module.exports = {
     ],
   },
   plugins: ['stylelint-order'],
-  overrides: [],
+  overrides: [
+    {
+      files: ['**/*.md'],
+      customSyntax: 'postcss-markdown',
+    },
+    {
+      files: ['**/*.html', '**/*.vue'],
+      customSyntax: 'postcss-html',
+    },
+    {
+      files: ['**/*.sass'],
+      customSyntax: 'postcss-sass',
+    },
+    {
+      files: ['**/*.scss'],
+      customSyntax: 'postcss-scss',
+    },
+    {
+      files: ['**/*.less'],
+      customSyntax: 'postcss-less',
+    },
+    {
+      files: ['**/*.styl', '**/*.stylus'],
+      customSyntax: 'postcss-styl',
+    },
+    {
+      files: ['**/*.sss'],
+      customSyntax: 'sugarss',
+    },
+  ],
 }
