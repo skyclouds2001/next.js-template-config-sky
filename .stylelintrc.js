@@ -15,8 +15,12 @@ module.exports = {
       customSyntax: 'postcss-markdown',
     },
     {
-      files: ['**/*.html', '**/*.vue'],
-      customSyntax: 'postcss-html',
+      files: ['**/*.html'],
+      extends: ['stylelint-config-html'],
+    },
+    {
+      files: ['**/*.vue'],
+      extends: ['stylelint-config-standard-vue'],
     },
     {
       files: ['**/*.sass'],
@@ -28,11 +32,12 @@ module.exports = {
     },
     {
       files: ['**/*.less'],
+      extends: ['stylelint-config-recommended-less'],
       customSyntax: 'postcss-less',
     },
     {
       files: ['**/*.styl', '**/*.stylus'],
-      customSyntax: 'postcss-styl',
+      extends: ['stylelint-stylus/standard'],
     },
     {
       files: ['**/*.sss'],
