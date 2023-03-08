@@ -1,5 +1,7 @@
 # Next.js-Template-Sky
 
+***This package will no longer maintained since 2023-02-25***
+
 ## Technology Stack
 
 - [Next.js](https://nextjs.org/)
